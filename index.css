@@ -510,7 +510,7 @@ header{
 
 .text_item{
     font-size: var(--font-xlarge);
-    
+    font-weight: 700;
     text-transform: uppercase;
     margin: 13px 0px;
 }
