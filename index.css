@@ -371,7 +371,7 @@ header{
     text-align: center;
     color: #fff;
     text-transform: uppercase;
-    font-weight: 900;
+    
     padding: 1rem;
     margin-bottom: 4rem;
 }
@@ -453,4 +453,20 @@ header{
 
 .title-header{
     font-size: var(--font-medium);
+}
+
+.title_create_account{
+    font-size: var(--font-large);
+    font-family: var(--alternative-font);
+}
+
+.campo_terminos{
+    display: flex;
+    justify-content: space-around;
+}
+
+.terminos_Ycondiciones{
+    display: flex;
+    
+    align-items: center;
 }

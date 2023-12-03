@@ -30,22 +30,46 @@
         </nav>                   
     </header> <!-- Fin de Header -->
 
+    <h2 class="slider__title title_login" style="text-align: center;">CREA TU CUENTA</h2>
+    <p class="title_login text-center title_create_account">Complete el formulario para ser parte del mundo de los Funkos</p>
 
-    <main class="main-container"> 
-        <h2 class="slider__title title_login" style="text-align: center;">INGRESAR A MI CUENTA</h2>
+    <main class="main-container">     
         <form action="" class=" formulario">
             
-                <div class="campo">
-                    <label for="email">Email:</label>
-                    <input id="email" type="email" placeholder="Tu Email">
+            <div class="campo">
+                <label for="nombre">Nombre:</label>
+                <input id="nombre" type="text" placeholder="Tu Nombre">
+            </div>
+
+            <div class="campo">
+                <label for="apellido">Apellido:</label>
+                <input id="apellido" type="text" placeholder="Tu Apellido">
+            </div>
+
+            <div class="campo">
+                <label for="email">Email:</label>
+                 <input id="email" type="email" placeholder="Tu Email">
+            </div>
+
+            <div class="campo">
+                <label for="tel">Contraseña:</label>
+                <input id="tel" type="password" placeholder="Tu Contraseña">
+            </div>
+
+            <div class="campo">
+                <label for="tel">Repita Contraseña:</label>
+                <input id="tel" type="password" placeholder="Tu Contraseña">
+            </div>             
+
+            <div class="campo_terminos">
+                <input type="submit" value="Registrar" class="btn">
+                <div class="terminos_Ycondiciones">
+                    <input type="checkbox" id="terminos" name="terminos">
+                <label for="terminos" >Acepto Términos y Condiciones</label>
                 </div>
-
-                <div class="campo">
-                    <label for="tel">Contraseña:</label>
-                    <input id="tel" type="password" placeholder="Tu Contraseña">
-                </div>        
-
-            <input type="submit" value="Ingresar" class="btn">
+                
+            </div>       
+            
         </form>
     </main>
    
