@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FUNKOSHOP</title>
-    <link rel="stylesheet" href="item.css">
+    <link rel="stylesheet" href="index.css">
     </head>
 <body>
     <header> <!-- Inicio Header -->
         <nav class="navbar container">
             <picture class="navbar__logo">
-                <a href="/pages/index.html">
+                <a href="index.html">
                     <img src="multimedia/branding/logo_light_horizontal.svg" alt="Logo lineal del funkoshop">
                 </a>
             </picture>
@@ -34,10 +34,10 @@
                     <a class="navbar__link" href="pages/contact.html">CONTACTO</a>
                 </li>
                 <li class="navbar__item">
-                    <a class="navbar__link" href="/pages/login.html">LOGIN</a>
+                    <a class="navbar__link" href="pages/login.html">LOGIN</a>
                 </li>
                 <li class="navbar__item">
-                    <a class="navbar__cart" href="/pages/shop.html">
+                    <a class="navbar__cart" href="pages/shop.html">
                     <img src="multimedia/icons/cart-icon.svg" alt="Icono de carrito">
                     </a>
                 </li>
@@ -46,16 +46,22 @@
     </header> <!-- Fin de Header -->
 
     <div>
-        <div>
+        <div class="contenedor info_contenedor">
             <img src="multimedia/star-wars/baby-yoda-1.webp" alt="baby yoda blueball">
-            <h5>STAR WARS</h5>
-            <h3>BABY YODA BLUEBALL</h3>
-            <p>Figura coleccionable de Baby Yoda (Grogui) - The Mandalorian Saga, edición lmitada.</p>
-            <h4>$1799,99.-</h4>
-            <button>Agregar al Carrito</button>
-            <br>
-            <a href="">Ver métodos de pago</a>
-            <p>3 cuotas sin interes</p>
+            <div class="info_detalles">
+                <div>
+                    <h5 class="card-item__licence text_first_title">STAR WARS</h5>
+                    <h3 class="text_item">BABY YODA BLUEBALL</h3>
+                    <p class="title_create_account">Figura coleccionable de Baby Yoda (Grogui) - The Mandalorian Saga, edición lmitada.</p>
+                    <h4 class="price_item">$1799,99</h4>
+                    <button class="btn">Agregar al Carrito</button>
+                    <br>
+                    <div class="info_item">
+                        <a class="card-item__promo text_underline" href="">Ver métodos de pago </a>
+                        <p class="card-item__promo"> - 3 cuotas sin interes</p>
+                    </div>                    
+                </div>                
+            </div>            
         </div>
         <!-- <div>
             <h2>PRODUCTOS RELACIONADOS</h2>
@@ -132,7 +138,7 @@
                             </picture>
                             <div class="card-item__content">
                                 <p class="card-item__licence">HARRY POTTER</p>
-                                <h4 class="card-item__name">LUNA LOVEGOOD LION MASK</h4>
+                                <h4 class="card-item__name">LUNA LOVEGOOD LION MASK</h4>                        
                                 <p class="card-item__price">$1799,99.-</p>
                                 <p class="card-item__promo">3 cuotas sin interes</p>
                             </div>
@@ -147,7 +153,7 @@
         <ul class="navbar__item">
             <li class="navbar__item"><a class="navbar__link" href="pages/shop.html">SHOP</a></li>
             <li class="navbar__item"><a class="navbar__link" href="pages/register.html">REGISTRARSE</a></li>
-            <li class="navbar__item"><a class="navbar__link" href="pages/login.html">LOGIN</a></li>
+            <li class="navbar__item"><a class="navbar__link" href="pages/login.html">INGRESAR</a></li>
             <li class="navbar__item"><a class="navbar__link" href="pages/contact.html">CONTACTO</a></li>
         </ul>
         <picture>
