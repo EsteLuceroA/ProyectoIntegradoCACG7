@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FUNKOSHOP - HOME</title>
+    <link rel="stylesheet" href="../index.css">
+</head>
+<body>
+    <header> <!-- Inicio Header -->
+        <nav class="navbar container">
+            <picture class="navbar__logo">
+                <a href="/pages/index.html">
+                    <img src="../multimedia/branding/logo_light_horizontal.svg" alt="Logo lineal del funkoshop">
+                </a>
+            </picture>
+            <ul class="navbar__menu">
+                
+                <li class="navbar__item">
+                    <a class="navbar__link" href="../index.html">VER TIENDA</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="/pages/login.html">ADMIN</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="/pages/login.html">SALIR</a>
+                </li>
+            </ul>
+        </nav>                   
+    </header> <!-- Fin de Header -->
+
+
+    <main class="contenido-principal contenedor">
+        <h2 class="slider__title text-center title_login">Contacto</h2>
+
+        <form action="" class=" formulario">
+
+            <fieldset>
+                <legend class="title-header">Tus Datos</legend>
+
+                <div class="campo">
+                    <label for="nombre">Nombre:</label>
+                    <input id="nombre" type="text" placeholder="Tu Nombre">
+                </div>
+                
+                <div class="campo">
+                    <label for="asunto">Asunto:</label>
+                    <input id="asunto" type="text" placeholder="Tu Asunto">
+                </div>
+                
+                <div class="campo">
+                    <label for="email">Email:</label>
+                    <input id="email" type="email" placeholder="Tu Email">
+                </div>
+
+                <div class="campo">
+                    <label for="tel">Telefono:</label>
+                    <input id="tel" type="tel" placeholder="Tu Teléfono">
+                </div>
+
+                <div class="campo">
+                    <label for="tel">Mensaje:</label>
+                    <textarea name="" id="" cols="50" rows="10"></textarea>
+                </div>
+
+            </fieldset>
+
+            <fieldset>
+                <legend class="title-header">Pais</legend>
+                <div class="campo">
+                    <label for="pais">Pais</label>
+                    <select name="" id="pais">
+                        <option value="">--Seleccione--</option>
+                        <option value="">Argentina</option>
+                        <option value="">Bolivia</option>
+                        <option value="">Mexico</option>
+                        <option value="">Japón</option>
+                        <option value="">EEUU</option>
+                    </select>
+                </div>
+            </fieldset>
+
+
+            <input type="submit" value="Enviar Formulario" class="btn">
+
+        </form>
+
+    </main>
+   
+    
+    <footer class="footer">
+        <nav class="navbar container">
+            <ul class="navbar__item">
+                <li class="navbar__item"><a class="navbar__link" href="/pages/shop.html">SHOP</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="/pages/register.html">REGISTRARSE</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="login.html">LOGIN</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="contact.html">CONTACTO</a></li>
+            </ul>
+            <picture>
+                <img src="../multimedia/branding/isotype.svg" alt="Isotipo de Funkoshop">
+            </picture>
+        </nav>
+            <p class="footer__copy">All rights reserved 2023 - Funkoshop &copy;</p>        
+    </footer>  
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script> 
+</body>
+</html>

@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Raleway:wght@500;700&display=swap');
+
+/* Normalizar los estilos */
+
+:root { /* Seudonimo de la etiqueta html */
+    /* Pallette */
+    --primary-solid: #FF3333;
+    --primary-900:rgb(255, 51, 51, 0.9);
+    --primary-500:rgb(255, 51, 51, 0.5);
+    --primary-500:rgb(255, 51, 51, 0.3);
+
+    --secondary-solid: #1D84B5;
+    --secondary-900: rgb(29, 132, 181, 0.9);
+    --secondary-500: rgb(29, 132, 181, 0.5);
+    --secondary-300: rgb(29, 132, 181, 0.3);
+
+    --dark-solid: #1F1F1F;
+    --dark-900: rgb(31, 31, 31, 0.9);
+    --dark-500: rgb(31, 31, 31, 0.5);
+    --dark-300: rgb(31, 31, 31, 0.3);
+
+    --dark-bg-solid: #30343F;
+    --light-bg-solid: #FAFAFF;
+    --light-font-solid: white;
+
+    /* Typography */
+    --base-font:'Inter', sans-serif;  
+    --alternative-font:'Raleway', sans-serif;
+
+    /* Font-size */
+    --font-display: 4.6em;
+    --font-jumbo: 3.8em;
+    --font-xlarge: 3em;
+    --font-large: 2.4em;
+    --font-medium: 1.8em;
+    --font-small: 1.6em;
+    --font-xsmall: 1.2em;
+
+    /* Spacings */
+    --spacing-128: 12.8rem;
+    --spacing-68: 6.8rem;
+    --spacing-36: 3.6rem;
+    --spacing-28: 2.8rem;
+    --spacing-24: 2.4rem;
+    --spacing-20: 2rem;
+    --spacing-16: 1.6rem;
+    --spacing-12: 1.2rem;
+    --spacing-8: 0.8rem;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%; 
+    color: var(--dark-solid);
+    font-family: var(--base-font);    
+}
+
+a{
+    text-decoration: none;
+    font-family: inherit;
+    color: inherit;
+}
+
+header, 
+footer{
+    color: var(--light-font-solid);
+    font-family: var(--alternative-font);
+}
+ul,ol{
+    list-style-type: none;
+}
+p{
+    font-size: 1.8em;
+}
+img {
+    width: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;    
+}
+
+/* HEADER */
+
+header{
+    background-color: var(--dark-bg-solid);
+    padding: var(--spacing-36) var(--spacing-12);
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.navbar__logo { 
+    max-width: 300px;
+}
+
+.navbar .navbar__menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: var(--spacing-20);
+}
+.navbar__link {
+    font-size: var(--font-medium);
+    padding: var(--spacing-8) var(--spacing-16);
+    display: inline-block;
+    transition: background .3s ease-in-out;
+    border-radius: 5px;
+    position: relative;
+}
+.navbar__link:hover {
+    background-color: var(--primary-900);    
+}
+
+.with-icon{
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-8);
+}
+
+.with-submenu:hover .submenu {
+    display: block;
+}
+.submenu {
+    display: none;
+    width: 200px;
+    position: absolute;
+    background-color: var(--dark-bg-solid);
+    z-index: 3; /* Para que quede encima del banner */
+}
+.submenu__link {
+    display: block;
+    padding: var(--spacing-8) var(--spacing-16);
+    font-size: var(--font-medium);
+    transition: background .3s ease-in-out;
+}
+.submenu__link:hover {
+    background-color: var(--primary-900);  
+}
+
+/* SHOP */
+
+.shop {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    column-gap: var(--spacing-16);
+    margin-top: var(--spacing-68);
+    margin-bottom: var(--spacing-68);
+}
+.shop__filter {
+    display: flex;
+    flex-direction: column;
+    padding: var(--spacing-20);
+}
+.filter-title{
+    font-size: var(--font-large);
+    font-weight: 600;
+    color: var(--dark-900);
+    padding: 15px 0;
+}
+
+.filter-input {
+    border: 2px solid var(--dark-900);
+    border-radius: 5px;
+    padding: var(--spacing-8);
+    font-size: var(--font-medium);
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--dark-bg-solid);
+}
+
+.price-title {
+    font-size: var(--font-small);
+    font-weight: 600;
+    text-align: center;
+}
+
+.price-input {
+    border: 2px solid var(--dark-900);
+    border-radius: 5px;
+    width: 60px;
+    height: 30px;
+    text-align: center;
+    font-size: var(--font-small);
+    margin: 0 var(--spacing-8);    
+}
+
+.filter-label {
+    display: block;
+    position: relative;
+    padding-left: var(--spacing-36);
+    margin-left: 15px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    font-size: var(--font-small);
+    font-weight: 500;
+}
+  
+/* Hide the default checkbox */
+input[type=checkbox] {
+    visibility: hidden;
+}
+  
+/* Creating a custom checkbox
+based on demand */
+.filter-checkbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 2px solid var(--dark-900);
+    border-radius: 5px;
+    width: 24px;
+    height: 24px;
+}
+  
+/* Specify the background color to be
+shown when hovering over checkbox */
+.filter-label:hover input ~ .filter-checkbox {
+    background-color: var(--primary-solid);
+    border: none;
+}
+  
+/* Specify the background color to be
+shown when checkbox is active */
+.filter-label input:active ~ .filter-checkbox {
+    background-color: var(--primary-solid);
+    border: none;
+}
+  
+/* Specify the background color to be
+shown when checkbox is checked */
+.filter-label input:checked ~ .filter-checkbox {
+    background-color: var(--dark-bg-solid);
+}
+  
+/* Checkmark to be shown in checkbox */
+/* It is not be shown when not checked */
+.filter-checkbox:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+  
+/* Display checkmark when checked */
+.filter-label input:checked ~ .filter-checkbox:after {
+    display: block;
+}
+  
+/* Styling the checkmark using webkit */
+/* Rotated the rectangle by 45 degree and 
+showing only two border to make it look
+like a tickmark */
+.filter-label .filter-checkbox:after {
+    left: 8px;
+    bottom: 5px;
+    width: 6px;
+    height: 12px;
+    border: solid white;
+    border-width: 0 4px 4px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.shop__items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    column-gap: var(--spacing-20);
+    row-gap: var(--spacing-36);
+}
+
+.card-item__cover{
+    display: flex;
+    position: relative;
+} 
+
+.card-item__cover img {
+    animation: fade .7s;
+}
+
+.card-item__tag {
+    font-size: var(--font-xsmall) ;
+    text-transform: uppercase;
+    background-color: var(--primary-solid);
+    color: var(--light-font-solid);
+    padding: var(--spacing-8) var(--spacing-20);
+    position: absolute;
+    right: 0;
+
+}
+
+.card-item__img--back {
+    display: none;
+}
+
+.card-item__cover:hover .card-item__img--back{
+    display: block;
+}
+
+.card-item__cover:hover .card-item__img--front{
+    display: none;
+}
+
+
+.card-item__content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-12);
+    padding: var(--spacing-16);
+}
+
+.card-item__licence {
+    font-size: var(--font-xsmall);
+    font-weight: 500;
+}
+
+.card-item__name {
+    font-size: var(--font-small);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.card-item__price {
+    font-size: var(--font-small);
+}
+
+.card-item__promo {
+    font-size: var(--font-xsmall);
+    color: var(--secondary-solid);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* PAGINATION */
+
+.center {
+    text-align: center;
+    margin-top: var(--spacing-68);
+  }
+  
+  .pagination {
+    display: inline-block;
+  }
+  
+  .pagination a {
+    float: left;
+    padding: 11px 14px;
+    width: 44px;
+    height: 44px;
+    font-size: var(--font-small);
+    font-weight: 700;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid var(--dark-300);
+    border-radius: 5px;
+    margin: 0 4px;
+  }
+
+  .pagination a.inactive {
+    color: var(--dark-300);
+    background-color: var(--dark-300);
+    border: none
+  }
+  
+  .pagination a.active {
+    color: var(--primary-solid);
+    border: 1px solid var(--primary-solid);
+  }
+  
+  .pagination a:hover:not(.active) {background-color: #ddd;}
+
+/* FOOTER */
+.footer {
+    background-color: var(--dark-bg-solid);
+    padding: var(--spacing-68);
+}
+.footer__copy {
+    text-align: center;
+    margin-top: var(--spacing-36);
+}
+
