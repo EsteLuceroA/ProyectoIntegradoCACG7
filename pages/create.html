@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FUNKOSHOP - HOME</title>
+    <link rel="stylesheet" href="../index.css">
+</head>
+<body>
+    <header> <!-- Inicio Header -->
+        <nav class="navbar container">
+            <picture class="navbar__logo">
+                <a href="../index.html">
+                    <img src="../multimedia/branding/logo_light_horizontal.svg" alt="Logo lineal del funkoshop">
+                </a>
+            </picture>
+            <ul class="navbar__menu">
+                
+                <li class="navbar__item">
+                    <a class="navbar__link" href="../index.html">VER TIENDA</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="login.html">ADMIN</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="login.html">SALIR</a>
+                </li>
+            </ul>
+        </nav>                   
+    </header> <!-- Fin de Header -->
+
+
+    <main class="main-container">         
+        <form action="" class="navbar__create"> <!--navbar__create-->
+            <h2 class="slider__title title_create" style="text-align: left;">CREAR NUEVO ITEM</h2>
+                <div class="campo">
+                    <label>Categoria:</label>
+                    <select name="">
+                        <option value="">Seleccionar</option>
+                        <option value="">Funkos</option>
+                        <option value="">Remeras</option>
+                        <option value="">Llaveros</option>
+                    </select>
+
+                    <label>Licencia:</label>
+                    <select name="">
+                        <option value="">Seleccionar</option>
+                        <option value="">Funkos</option>
+                        <option value="">Remeras</option>
+                        <option value="">Llaveros</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="producto">Nombre del producto:</label>
+                    <input id="producto" type="producto" placeholder="Kakashi Hatake">
+                </div>    
+
+                <div class="campo">
+                    <input id="descripcion" type="descripcion" placeholder="Descripción del producto">
+                </div>  
+
+                <div class="campo">
+                    <label for="SKU">SKU:</label>
+                    <input id="SKU" type="SKU" placeholder="SSK111AB001">
+
+                    <label for="Precio">Precio:</label>
+                    <input id="Precio" type="Precio" placeholder="$ 0.000,00">
+
+                    <label for="Stock">Stock:</label>
+                    <input id="Stock" type="Stock" placeholder="0">
+                </div>    
+
+                <div class="campo">
+                    <label for="Descuento">Descuento:</label>
+                    <input id="Descuento" type="Descuento" placeholder="0%">
+
+                    <label>Cuotas:</label>
+                    <select name="">
+                        <option value="">3 cuotas sin interes</option>
+                        <option value="">6 cuotas sin interes</option>
+                        <option value="">9 cuotas sin interes</option>
+                        <option value="">12 cuotas sin interes</option>
+                    </select>
+                </div>  
+
+                 <div class="campo">
+                    <label for="Imagenes">Imagenes:</label>
+                    <input type="file" name="Imagenes">
+
+                </div>   
+
+                <div class="campo">
+                    <input type="submit" value="Agregar Productos" class="btn">
+                    <input type="submit" value="Limpiar" class="btn">
+                </div>          
+
+        </form>
+
+        
+
+        
+
+    </main>
+   
+    
+    <footer class="footer">
+        <nav class="navbar container">
+            <ul class="navbar__item">
+                <li class="navbar__item"><a class="navbar__link" href="shop.html">SHOP</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="register.html">REGISTRARSE</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="login.html">INGRESAR</a></li>
+                <li class="navbar__item"><a class="navbar__link" href="contact.html">CONTACTO</a></li>
+            </ul>
+            <picture>
+                <img src="../multimedia/branding/isotype.svg" alt="Isotipo de Funkoshop">
+            </picture>
+        </nav>
+            <p class="footer__copy">All rights reserved 2023 - Funkoshop &copy;</p>        
+    </footer>  
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script> 
+</body>
+</html>
