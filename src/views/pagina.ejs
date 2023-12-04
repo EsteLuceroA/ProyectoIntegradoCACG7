@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <%- include('partials/header') %>
+    <%= mensaje%>
+    <% if(mensaje === 'asdfmovie'){ %>
+        <h2>La condicion ha llegado</h2>
+    <% } else { %>
+        <h4>La condicioon no ha llegado</h4>
+    <% } %>
+
+    <% for(let i=0; i<a.length; i++) { %>
+       <h3><%=a[i].nombre %></h3>
+    <% } %>
+</body>
+</html>

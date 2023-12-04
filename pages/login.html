@@ -21,7 +21,7 @@
                     <a class="navbar__link" href="../index.html">VER TIENDA</a>
                 </li>
                 <li class="navbar__item">
-                    <a class="navbar__link" href="login.html">ADMIN</a>
+                    <a class="navbar__link" href="/pages/create.html">ADMIN</a>
                 </li>
                 <li class="navbar__item">
                     <a class="navbar__link" href="login.html">SALIR</a>
@@ -33,16 +33,16 @@
 
     <main class="main-container"> 
         <h2 class="slider__title title_login" style="text-align: center;">INGRESAR A MI CUENTA</h2>
-        <form action="" class=" formulario">
+        <form action="" class=" formulario" method="POST">
             
                 <div class="campo">
                     <label for="email">Email:</label>
-                    <input id="email" type="email" placeholder="Tu Email">
+                    <input name="user"id="email" type="text" placeholder="Tu Email">
                 </div>
 
                 <div class="campo">
                     <label for="tel">Contraseña:</label>
-                    <input id="tel" type="password" placeholder="Tu Contraseña">
+                    <input name="pass" id="tel" type="password" placeholder="Tu Contraseña">
                 </div>        
 
             <input type="submit" value="Ingresar" class="btn">

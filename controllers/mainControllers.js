@@ -1,11 +1,18 @@
+const ejs = require('ejs')
+const {resolve} = require('path');
 
 
-const getMainPage = (req, res) => {
-    res.send('getMain')
+const getMainPage = async(req, res) => {
+    res.send('getMainPage')
+    
 }
 
 const getHome = (req, res) => {
-    res.send('getHome')
+    //res.send('getHome')
+    //res.sendFile(resolve.join())
+    //console.log(resolve()+'/pages/contact.html')
+    const a = [{ id: 1, nombre: 'Juan'}, {id:2, nombre:'eL Pepe'}]
+    res.render('pagina',{mensaje:"asdfmovie", a})
 }
 
 const getContact = (req, res) => {

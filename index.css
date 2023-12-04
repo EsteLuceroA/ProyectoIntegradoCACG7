@@ -474,33 +474,6 @@ header{
     padding-top: 5rem;
 }
 
-/* PAGE CREATE */
-
-.navbar__create{
-    
-    width: 827.63px;
-    height: 669.3px;
-    top: 180px;
-    left: 115.55px;
-    margin: 0 auto;
-
-    /*
-    max-width: 60rem;    
-    */
-}
-
-.button_create{
-    display: flex;
-    justify-content: auto;
-    margin: auto;
-}
-
-.form_button_create{
-    width: 384.14px;
-    height: 44.33px;
-    top: 885.3px;
-    left: 115.55px;
-}
 
 /** LISTADO DE PRODUCTOS */
 .contenedor {
