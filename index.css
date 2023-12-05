@@ -80,7 +80,7 @@ p{
     font-size: 1.8em;
 }
 img {
-    width: 100%;
+    width: 80%;
 }
 
 .container {
@@ -266,10 +266,24 @@ header{
     text-transform: uppercase;
 }
 
-.slider__items {
+iconify-icon {
+    color: var(--dark-bg-solid);
+    font-size: var(--font-small);
+    font-weight: 700;
+}
+
+.glide__arrow--left {
+    left: 0;
+}
+
+.glide__arrow--right {
+    right: 0;
+}
+
+/* .slider__items {
     display: flex;
     gap: var(--spacing-24);
-}
+} */
 
 .card-item__cover{
     display: flex;
@@ -379,6 +393,7 @@ header{
 .campo {
     display: flex;
     margin-bottom: 2rem;
+    margin-left: 10px;
 }
 
 .campo label{
@@ -413,7 +428,7 @@ header{
 	min-height: 36px;
 	width: 250px;
 	
-	form-sizing: content;
+form-sizing: content;
 }
 
 
@@ -551,9 +566,9 @@ header{
     width: 30px;
     height: 30px;
 
-    .item__input {
-        font-size: var(--font-large);
-        width: 86px;
-        height: 35px;
-        text-align: center;
+.item__input {
+    font-size: var(--font-large);
+    width: 40px;
+    height: 35px;
+    text-align: center;
     }
