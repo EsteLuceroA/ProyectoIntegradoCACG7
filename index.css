@@ -428,7 +428,7 @@ iconify-icon {
 	min-height: 36px;
 	width: 250px;
 	
-form-sizing: content;
+    /*form-sizing: content;*/
 }
 
 
@@ -565,7 +565,7 @@ form-sizing: content;
     font-size: var(--font-xsmall);
     width: 30px;
     height: 30px;
-
+}
 .item__input {
     font-size: var(--font-large);
     width: 40px;
