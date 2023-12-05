@@ -18,7 +18,11 @@ add.addEventListener(
 subtract.addEventListener(
 'click',
   // eslint-disable-next-line no-return-assign
-() => (quantity.value = Number(quantity.value) - 1),
+() => {
+  if(quantity.value>0)
+    quantity.value = Number(quantity.value) - 1
+  
+},
 );
 
 add_2.addEventListener(
