@@ -432,6 +432,7 @@ header{
     text-align: center;
     border: none;
     margin-bottom: 20px;
+    margin-top: 10px;
 }
 
 .btn:hover {   
@@ -532,3 +533,27 @@ header{
     font-size: var(--font-medium);
     
 }
+
+/* Botones suma y resta de Item */
+.item__suma {
+    background-color: black;
+    color: var(--light-bg-solid);
+    font-weight: bold;
+    font-size: var(--font-xsmall);
+    width: 30px;
+    height: 30px;
+}
+.item__resta {
+    background-color: black;
+    color: var(--light-bg-solid);
+    font-weight: bold;
+    font-size: var(--font-xsmall);
+    width: 30px;
+    height: 30px;
+
+    .item__input {
+        font-size: var(--font-large);
+        width: 86px;
+        height: 35px;
+        text-align: center;
+    }
