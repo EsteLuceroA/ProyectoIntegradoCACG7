@@ -7,16 +7,14 @@ const getMainPage = async(req, res) => {
     
 }
 
-const getHome = (req, res) => {
-    //res.send('getHome')
-    //res.sendFile(resolve.join())
-    //console.log(resolve()+'/pages/contact.html')
-    const a = [{ id: 1, nombre: 'Juan'}, {id:2, nombre:'eL Pepe'}]
-    res.render('pagina',{mensaje:"asdfmovie", a})
+const getHome = (req, res) => {   
+    res.sendFile(resolve()+'/public/pages/edit.html')
+    /*const a = [{ id: 1, nombre: 'Juan'}, {id:2, nombre:'eL Pepe'}]
+    res.render('pagina',{mensaje:"asdfmovie", a})*/
 }
 
 const getContact = (req, res) => {
-    res.send('getContact')
+    res.sendFile(resolve()+'/public/pages/contact.html')
 }
 const getAbout = (req, res) => {
     res.send('getAbout')

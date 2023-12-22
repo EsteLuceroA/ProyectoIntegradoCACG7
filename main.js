@@ -35,7 +35,7 @@ app.get('/login',(req,res)=>{
     if(req.session.nombre==='admin'){
         return res.send('Ya has logeado como ADMIN')
     }
-    res.sendFile(resolve()+'/pages/login.html')
+    res.sendFile(resolve()+'/public/pages/login.html')
 })
 
 app.post('/login',(req,res)=>{
@@ -47,6 +47,8 @@ app.post('/login',(req,res)=>{
     }
     res.send('sos administrador')
 })
+
+
 
 app.get('/ver', (req,res)=>{
     console.log(req.session.nombre)
@@ -76,7 +78,7 @@ app.get('/cookie/leer',(req,res)=>{
     res.send(`EL VALOR DE LA COOKIE nombreCookie es ${nombreCookie} y de la cookieFirmada ${cookieFirmada}`)
 })
 
-//app.use(express.static('public'))
+app.use(express.static('public'))
 
 app.use('/', mainRoutes)
 app.use('/shop', shopRoutes)
